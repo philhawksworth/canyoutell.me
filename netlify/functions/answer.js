@@ -1,21 +1,38 @@
+const { builder } = require('@netlify/functions');
+const striptags = require('striptags');
+
+
 const pageTemplate = (data) => {
   return `
   <html>
     <body>
-      <code>${ JSON.stringify(data) }</code>
+      <h1>${ striptagsdata }?</h1>
+      <h2>It depends.</h2>
     <body>
   </html>
   `;
 };
 
 
-exports.handler = async (event) => {
+const unslugify = (slug) => {
+  const result = slug.substr(1).replace(/\-/g, " ");
+  return unescape(result.charAt(0).toUpperCase() + result.substr(1).toLowerCase());
+}
 
-  const { params } = event.queryStringParameters;
 
+// DPR provided by a Netlify On-Demand Builder function
+const handler = async (event) => {
+
+  // make an effort not to let scripts and HTML through tio the page
+  const plainQuestion = striptags(unescape(event.path));
+  const question = unslugify(plainQuestion);
+
+  // add the question to the page and render it as a persisting view for this URL
   return {
     statusCode: 200,
-    body: pageTemplate(params)
+    body: pageTemplate(question)
   };
 
 };
+
+exports.handler = builder(handler);

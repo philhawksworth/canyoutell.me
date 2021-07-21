@@ -4,10 +4,16 @@ const striptags = require('striptags');
 
 exports.handler = async (event) => {
 
-  const { question } = event.queryStringParameters;
-  const plainQuestion = striptags(question);
-  const path = slugify(plainQuestion);
-  
+  try {
+    const { question } = event.queryStringParameters;
+    const plainQuestion = striptags(question);
+    const path = slugify(plainQuestion);
+  }
+  catch(err) {
+    console.log(err);
+    console.log(event);
+    
+  }
   return {
     statusCode: "302",
     headers: {

@@ -3,6 +3,9 @@ const slugify = require("slugify");
 const striptags = require('striptags');
 
 exports.handler = async (event) => {
+
+  console.log({event});
+  
   
   if (event.httpMethod !== "POST") {
     return {

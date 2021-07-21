@@ -6,9 +6,6 @@
   publish = "www"
   command = "echo 'No build command for this site'"
 
-[functions]
-  node_bundler = "esbuild"
-
 
 [[redirects]]
   from = "/ask"

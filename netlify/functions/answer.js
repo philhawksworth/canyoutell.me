@@ -6,7 +6,7 @@ const pageTemplate = (data) => {
   return `
   <html>
     <body>
-      <h1>${ striptagsdata }?</h1>
+      <h1>${ data }?</h1>
       <h2>It depends.</h2>
     <body>
   </html>

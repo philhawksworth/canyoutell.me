@@ -8,7 +8,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
   line-height: 1.4;
-  background-color: #4a3352;
+  background-color: var(--base-color);
   color: #ffffffcc;
 }
 

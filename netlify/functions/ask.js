@@ -1,8 +1,9 @@
-const querystring = require("querystring");
 const slugify = require("slugify");
 const striptags = require('striptags');
 
 exports.handler = async (event) => {
+  
+  console.log(event);
 
   try {
     const { question } = event.queryStringParameters;
@@ -17,7 +18,6 @@ exports.handler = async (event) => {
   }
   catch(err) {
     console.log(err);
-    console.log(event);
     return {
       statusCode: "500",
       body: JSON.stringify(err)

@@ -10,7 +10,7 @@ exports.handler = async (event) => {
     const plainQuestion = striptags(question);
     const path = slugify(plainQuestion);
     return {
-      statusCode: "302",
+      statusCode: 302,
       headers: {
         location: `/${path}`
       }
@@ -19,7 +19,7 @@ exports.handler = async (event) => {
   catch(err) {
     console.log(err);
     return {
-      statusCode: "500",
+      statusCode: 500,
       body: JSON.stringify(err)
     };
   }

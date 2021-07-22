@@ -16,7 +16,7 @@ const pageTemplate = (data) => {
 
 const unslugify = (slug) => {
   const result = slug.substr(1).replace(/\-/g, " ");
-  return unescape(result.charAt(0).toUpperCase() + result.substr(1).toLowerCase());
+  return unescape(result.charAt(0).toUpperCase() + result.substr(1));
 }
 
 

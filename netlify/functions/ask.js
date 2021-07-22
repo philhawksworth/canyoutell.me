@@ -8,18 +8,21 @@ exports.handler = async (event) => {
     const { question } = event.queryStringParameters;
     const plainQuestion = striptags(question);
     const path = slugify(plainQuestion);
+    return {
+      statusCode: "302",
+      headers: {
+        location: `/${path}`
+      }
+    };
   }
   catch(err) {
     console.log(err);
     console.log(event);
-    
+    return {
+      statusCode: "500",
+      body: JSON.stringify(err)
+    };
   }
-  return {
-    statusCode: "302",
-    headers: {
-      location: `/${path}`
-    }
-  };
 
 };
 

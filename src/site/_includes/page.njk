@@ -7,6 +7,21 @@
     <title>{{ item.question | unslugify }}?</title>
     <meta name="description" content="${question}?">
     <link rel="stylesheet" href="/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/icons/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta property="og:title" content="{{ item.question | unslugify }}?">
+    <meta property="og:site_name" content="CanYouTell.me">
+    <meta property="og:url" content="https://canyoutell.me">
+    <meta property="og:description" content="Can you tell me.., {{ item.question | unslugify }}?">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://canyoutell.me/img/og/{{ item.question | unslugify }}?">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://canyoutell.me">
+    <meta property="twitter:title" content="{{ item.question | unslugify }}?">
+    <meta property="twitter:description" content="Can you tell me... {{ item.question | unslugify }}?">
+    <meta property="twitter:image" content="https://canyoutell.me/img/og/{{ item.question | unslugify }}?">
   </head>
   <body>
     <header>

@@ -14,6 +14,7 @@ module.exports = (eleventyConfig) => {
   });
 
   eleventyConfig.addPassthroughCopy("src/site/img");
+  eleventyConfig.addPassthroughCopy("src/site/site.webmanifest");
 
   // where do things live?
   return {
@@ -21,7 +22,7 @@ module.exports = (eleventyConfig) => {
       input: "src/site",
       output: "dist"
     },
-    templateFormats : ["njk", "css"],
+    templateFormats : ["njk", "css", "ico"],
     htmlTemplateEngine : "njk",
     markdownTemplateEngine : "njk",
     

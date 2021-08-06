@@ -68,7 +68,8 @@ header p {
 
 .answer {
   display: block;
-  font-size: 5em;
+  font-size: 4em;
+  line-height: 1.1;
 }
 
 a:link,

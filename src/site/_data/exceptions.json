@@ -10,5 +10,9 @@
   { 
     "question" :"dowebsitesneedtolookexactlythesameineverybrowser",
     "answer" : "No! [but you knew that already](http://dowebsitesneedtolookexactlythesameineverybrowser.com/)"
+  },
+  { 
+    "question" :"is-css-a-programming-language",
+    "answer" : "Yeah. It is. [Learn it](https://developer.mozilla.org/en-US/docs/Learn/CSS) and prosper!"
   }
 ]}

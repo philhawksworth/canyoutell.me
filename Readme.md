@@ -10,7 +10,7 @@ A bit of fun (and a little demonstration of <a href="https://jamstack.org/glossa
 
 ```
 # install the Netlify CLI
-npm i -g netlify
+npm i -g netlify-cli
 
 # clone this repo
 git clone https://github.com/philhawksworth/canyoutell.me

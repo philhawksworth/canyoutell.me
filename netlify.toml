@@ -13,7 +13,7 @@
 
 [[redirects]]
   from = "/img/og/:question"
-  to = "https://res.cloudinary.com/philhawksworth/image/fetch/c_fit,l_text:Roboto_56_bold::question,co_rgb:FFFFFF,g_north_west,y_150,x_100,w_1000/https://canyoutell.me/img/og-template.png"
+  to = "https://res.cloudinary.com/philhawksworth/image/fetch/c_fit,l_text:Helvetica_68_bold::question%3F%0A,co_rgb:FFFFFF,g_north_west,y_250,x_100,w_1000/https://canyoutell.me/img/og-template.png"
   status = 200
 
 [[redirects]]

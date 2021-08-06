@@ -19,7 +19,7 @@ const handler = async (event) => {
   // add the question to the page and render it as a persisting view for this URL
   return {
     statusCode: 200,
-    body: pageTemplate(question, answer)
+    body: pageTemplate(plainQuestion, question, answer)
   };
   
 };

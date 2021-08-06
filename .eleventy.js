@@ -5,16 +5,15 @@ const marked = require("marked");
 module.exports = (eleventyConfig) => {
 
   
-  // Markdown filter
+  // Markdown filters
   eleventyConfig.addFilter("markdownify", (str) => marked(str));
-  
-  
+    
   eleventyConfig.addFilter("unslugify", (slug) => {
     const result = slug.replace(/\-/g, " ");
     return unescape(result.charAt(0).toUpperCase() + result.substr(1));
   });
 
-
+  eleventyConfig.addPassthroughCopy("src/site/img");
 
   // where do things live?
   return {

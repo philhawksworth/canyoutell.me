@@ -1,4 +1,4 @@
-module.exports = (question, answer) => {
+module.exports = (slug, question, answer) => {
   return `
   <!DOCTYPE html>
   <html lang="en">
@@ -6,9 +6,20 @@ module.exports = (question, answer) => {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Can you tell me...?</title>
+    <title>${question}?</title>
     <meta name="description" content="${question}?">
     <link rel="stylesheet" href="/style.css">
+    <meta property="og:title" content="${question}?">
+    <meta property="og:site_name" content="CanYouTell.me">
+    <meta property="og:url" content="https://canyoutell.me${slug}">
+    <meta property="og:description" content="${question}?">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://canyoutell.me/img/og/${question}?">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://canyoutell.me${slug}?">
+    <meta property="twitter:title" content="${question}?">
+    <meta property="twitter:description" content="${question}?">
+    <meta property="twitter:image" content="https://canyoutell.me/img/og/${question}?">
   </head>
   <body>
     <header>

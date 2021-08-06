@@ -20,6 +20,10 @@ module.exports = (slug, question, answer) => {
     <meta property="twitter:title" content="${question}?">
     <meta property="twitter:description" content="${question}?">
     <meta property="twitter:image" content="https://canyoutell.me/img/og/${question}?">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/icons/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
   </head>
   <body>
     <header>
@@ -44,7 +48,7 @@ module.exports = (slug, question, answer) => {
         (And as a little demonstration of <a href="https://jamstack.org/glossary/dpr/">DPR</a> using <a href="https://www.netlify.com/">Netlify</a>'s <a href="https://www.netlify.com/blog/2021/04/14/faster-builds-for-large-sites-on-netlify-with-on-demand-builders-now-in-early-access/#main">On Demand Builder</a> functions)
       </p>
       <p>
-        Explore the code, and create your own version of the site to exoperiment with in a couple of clicks from the <a href="https://github.com/philhawksworth/canyoutell.me">GitHub repository</a>
+        Explore the code, and create your own version of the site to experiment with in a couple of clicks from the <a href="https://github.com/philhawksworth/canyoutell.me">GitHub repository</a>
       </p>
     </footer>
   </body>

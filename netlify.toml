@@ -2,6 +2,9 @@
   publish = "dist"
   command = "npx eleventy"
 
+[functions]
+  node_bundler = "esbuild"
+
 [dev] 
   publish = "dist"
   command = "npx eleventy --serve --watch"

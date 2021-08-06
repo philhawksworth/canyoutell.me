@@ -14,5 +14,9 @@
   { 
     "question" :"is-css-a-programming-language",
     "answer" : "Yeah. It is. [Learn it](https://developer.mozilla.org/en-US/docs/Learn/CSS) and prosper!"
+  },
+  { 
+    "question" :"Which-burger-is-the-best-Sarah's-or-Jason's",
+    "answer" : "It depends. (on who manages to feed one to [Phil](https://twitter.com) first)"
   }
 ]}

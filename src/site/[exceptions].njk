@@ -3,6 +3,6 @@ pagination:
     data: exceptions.questions
     size: 1
     alias: item
-permalink: "/{{ item.question}}/"
+permalink: "/{{ item.question | safe}}/"
 layout: page.njk
 ---

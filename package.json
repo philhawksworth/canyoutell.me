@@ -18,9 +18,10 @@
   },
   "homepage": "https://github.com/philhawksworth/canyoutell.me#readme",
   "dependencies": {
+    "@11ty/eleventy": "^0.12.1",
     "@netlify/functions": "^0.7.2",
+    "marked": "^2.1.3",
     "slugify": "^1.6.0",
-    "striptags": "^3.2.0",
-    "tinycolor2": "^1.4.2"
+    "striptags": "^3.2.0"
   }
 }

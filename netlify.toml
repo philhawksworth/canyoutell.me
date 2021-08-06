@@ -1,11 +1,10 @@
 [build] 
-  publish = "www"
-  command = "echo 'No build command for this site'"
+  publish = "dist"
+  command = "npx eleventy"
 
 [dev] 
-  publish = "www"
-  command = "echo 'No build command for this site'"
-
+  publish = "dist"
+  command = "npx eleventy --watch"
 
 [[redirects]]
   from = "/ask"

@@ -1,0 +1,14 @@
+{ "questions" : [
+  { 
+    "question" :"should-phil-do-karaoke",
+    "answer" : "All signs point to no"
+  },
+  { 
+    "question" :"do-websites-need-to-look-exactly-the-same-in-every-browser",
+    "answer" : "No! [but you knew that already](http://dowebsitesneedtolookexactlythesameineverybrowser.com/)"
+  },
+  { 
+    "question" :"dowebsitesneedtolookexactlythesameineverybrowser",
+    "answer" : "No! [but you knew that already](http://dowebsitesneedtolookexactlythesameineverybrowser.com/)"
+  }
+]}

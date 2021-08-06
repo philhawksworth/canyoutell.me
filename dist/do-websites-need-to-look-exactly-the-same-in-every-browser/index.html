@@ -1,12 +1,10 @@
-module.exports = (question, answer) => {
-  return `
-  <!DOCTYPE html>
+<!DOCTYPE html>
   <html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Can you tell me...?</title>
+    <title>Do websites need to look exactly the same in every browser?</title>
     <meta name="description" content="${question}?">
     <link rel="stylesheet" href="/style.css">
   </head>
@@ -15,11 +13,15 @@ module.exports = (question, answer) => {
     <p>
       Can you tell me...
     </p>
-    <h1>${question}?</h1>
+    <h1>Do websites need to look exactly the same in every browser?</h1>
       </header>
       <main>
         <p>
-          We asked around, <br/ >did some research, <br/ >ran some numbers,<br/ > and...<span class="answer">${answer}</span>
+          We asked around,
+          <br/ >did some research, 
+          <br/ >ran some numbers,
+          <br/ > and...<span class="answer"> <p>No! <a href="http://dowebsitesneedtolookexactlythesameineverybrowser.com/">but you knew that already</a></p>
+</span>
         </p>
         <p class="cta">
           <a href="/" >Anything else we can help with?</a>
@@ -38,5 +40,3 @@ module.exports = (question, answer) => {
     </footer>
   </body>
   </html>
-  `;
-};
